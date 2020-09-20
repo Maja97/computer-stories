@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvQuizTitle"
+                android:layout_marginTop="10dp"
+                android:text="Dodaj novu priču"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAddQuizImage"
+                android:layout_marginTop="10dp"
+                android:text="Dodaj sliku za glavni izbornik (obavezno)"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvQuizTitle">
+        </TextView>
+        <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/ivAddQuizImage"
+                android:src="@drawable/ic_baseline_add_photo_alternate_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAddQuizImage">
+        </ImageView>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/quizImageLoadedPath"
+                android:layout_marginStart="10dp"
+                app:layout_constraintStart_toEndOf="@id/ivAddQuizImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAddQuizImage">
+        </TextView>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAddQuizTitle"
+                android:layout_marginTop="10dp"
+                android:text="Naslov priče"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivAddQuizImage">
+        </TextView>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etQuizTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAddQuizTitle"
+                android:hint="Naslov">
+        </EditText>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

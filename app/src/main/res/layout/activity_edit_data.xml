@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activities.EditDataActivity">
+
+    <androidx.appcompat.widget.Toolbar
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways">
+        <com.google.android.material.tabs.TabLayout
+
+                android:id="@+id/tabLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:background="@drawable/tab_layout_background"
+                app:tabBackground="@drawable/tab_layout_selector"
+                app:tabIndicatorHeight="0dp"
+                app:tabMode="scrollable"
+                app:tabPaddingEnd="16dp"
+                app:tabPaddingStart="16dp"
+                app:tabRippleColor="@null"
+                android:layout_gravity="start"
+                app:tabSelectedTextColor="@color/colorPrimaryDark"
+                app:tabTextColor="@android:color/white">
+        </com.google.android.material.tabs.TabLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+   <androidx.viewpager2.widget.ViewPager2
+           android:id="@+id/viewPagerData"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/toolbar"
+           app:layout_constraintBottom_toBottomOf="parent">
+   </androidx.viewpager2.widget.ViewPager2>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:id="@+id/fragmentContainerAddTask"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintBottom_toBottomOf="parent">
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/customText"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        app:autoSizeMaxTextSize="30sp"
+        android:layout_rowWeight="1"
+        app:autoSizeMinTextSize="5sp"
+        app:autoSizeTextType="uniform">
+</TextView>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:id="@+id/memory"
+        tools:context=".ui.fragments.MemoryFragment">
+    <TextView
+            android:id="@+id/memoryText"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:textColor="@android:color/black"
+            app:autoSizeMaxTextSize="25sp"
+            app:autoSizeMinTextSize="5sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="@id/guideline28"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+    <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/memoryLayout"
+            app:layout_constraintStart_toStartOf="@id/guideline26"
+            app:layout_constraintEnd_toEndOf="@id/guideline27"
+            app:layout_constraintTop_toTopOf="@id/guideline28"
+            app:layout_constraintBottom_toBottomOf="@id/guideline29"
+            android:gravity="center"
+            android:stretchColumns="*"
+            android:stretchMode="columnWidth">
+    </TableLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.9" />
+</androidx.constraintlayout.widget.ConstraintLayout>

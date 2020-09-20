@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".ui.fragments.AddTaskDialogFragment">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPuzzleTitle"
+            android:layout_marginTop="10dp"
+            android:text="@string/tvAddPuzzleTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvAddPuzzleImage"
+            android:layout_marginTop="10dp"
+            android:text="@string/addBackgroundImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPuzzleTitle">
+    </TextView>
+    <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/ivAddPuzzleImage"
+            android:src="@drawable/ic_baseline_add_photo_alternate_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAddPuzzleImage"
+            android:contentDescription="@string/addImage">
+    </ImageView>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/puzzleImageLoadedPath"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@id/ivAddPuzzleImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAddPuzzleImage">
+    </TextView>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvAddPuzzleTitle"
+            android:layout_marginTop="10dp"
+            android:text="@string/addPuzzleInstruction"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivAddPuzzleImage">
+    </TextView>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etQuizTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAddPuzzleTitle">
+    </EditText>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnAddQuiz"
+            android:text="@string/save"
+        android:background="@drawable/rounded_corners"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etQuizTitle">
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
